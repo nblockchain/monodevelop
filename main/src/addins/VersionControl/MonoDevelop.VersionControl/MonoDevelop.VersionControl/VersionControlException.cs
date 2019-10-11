@@ -37,5 +37,15 @@ namespace MonoDevelop.VersionControl
 		{
 		}
 	}
-}
 
+	public class VersionControlOperationNotPermittedException : VersionControlException
+	{
+		public VersionControlOperationNotPermittedException () : base (GettextCatalog.GetString ("Operation not permitted"))
+		{
+		}
+
+		public VersionControlOperationNotPermittedException (string operation) : base (GettextCatalog.GetString ("Operation {0} not permitted", operation))
+		{
+		}
+	}
+}
