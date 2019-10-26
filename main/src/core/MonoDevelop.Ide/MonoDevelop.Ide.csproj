@@ -10,8 +10,8 @@
     <OutputPath>..\..\..\build\bin</OutputPath>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "/>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' "/>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' " />
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' " />
 
   <ItemGroup>
     <Reference Include="monodoc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
@@ -4299,6 +4299,7 @@
     <Compile Include="MonoDevelop.Components\Mac\VerticalAlignmentTextCell.cs" />
     <Compile Include="MonoDevelop.Ide.TypeSystem\TypeSystemService_WorkspaceRequestRegistration.cs" />
     <Compile Include="MonoDevelop.Ide.Gui.Dialogs\NewConfigurationDialog.cs" />
+    <Compile Include="MonoDevelop.Ide\IdeFeatureSwitchController.cs" />
   </ItemGroup>
   <ItemGroup Condition="$(IsMac)">
     <Compile Include="MonoDevelop.Components\Mac\KeyCodes.cs" />
