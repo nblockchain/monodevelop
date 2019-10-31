@@ -26,8 +26,4 @@
     <!-- Add the Facades directory.  Not sure how else to do this. Necessary at least for .NET 4.5 -->
     <AssemblySearchPaths Condition="'$(BaseFrameworkPathOverrideForMono)' != ''">$(FrameworkPathOverride)/Facades;$(AssemblySearchPaths)</AssemblySearchPaths>
   </PropertyGroup>
-
-  <ItemGroup Condition="'$(TargetFramework)'== 'net472'">
-    <Reference Include="netstandard" />
-  </ItemGroup>
 </Project>
